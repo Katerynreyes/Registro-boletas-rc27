@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro de Boletas | RC27</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111827, #374151);
+    min-height: 100vh;
+    color: #222;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+    padding: 25px 18px;
+}
+
+.encabezado {
+    text-align: center;
+    color: white;
+    padding: 25px 10px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 18px;
+}
+
+.encabezado h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.encabezado p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 22px;
+    padding: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+}
+
+.tarjeta h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.descripcion {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #374151;
+}
+
+.boton {
+    width: 100%;
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #1f2937;
+}
+
+.nota {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 12px;
+    color: #777;
+}
+
+.pie {
+    text-align: center;
+    color: white;
+    padding: 25px 10px;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="encabezado">
+
+        <div class="logo">
+            RC27
+        </div>
+
+        <h1>RC27 LOGÍSTICA Y EVENTOS</h1>
+
+        <p>Registro de Boletas</p>
+
+    </div>
+
+    <div class="tarjeta">
+
+        <h2>🎟️ Registrar Boleta</h2>
+
+        <p class="descripcion">
+            Ingresa los datos de la boleta para realizar el registro.
+        </p>
+
+        <form>
+
+            <label>Nombre del vendedor</label>
+            <input
+                type="text"
+                placeholder="Escribe tu nombre"
+                required
+            >
+
+            <label>Número de boleta</label>
+            <input
+                type="text"
+                placeholder="Ejemplo: 00125"
+                required
+            >
+
+            <label>Nombre del comprador</label>
+            <input
+                type="text"
+                placeholder="Nombre completo"
+                required
+            >
+
+            <label>Teléfono del comprador</label>
+            <input
+                type="tel"
+                placeholder="Ejemplo: 300 000 0000"
+                required
+            >
+
+            <label>Valor de la boleta</label>
+            <input
+                type="number"
+                placeholder="Ejemplo: 20000"
+                required
+            >
+
+            <label>Fecha de registro</label>
+            <input
+                type="date"
+                required
+            >
+
+            <button class="boton" type="submit">
+                REGISTRAR BOLETA
+            </button>
+
+        </form>
+
+        <p class="nota">
+            RC27 Logística y Eventos
+        </p>
+
+    </div>
+
+    <div class="pie">
+        © 2026 RC27 Logística y Eventos
+    </div>
+
+</div>
+
+</body>
+</html>
